@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from 'next/script';
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,20 +14,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com/" crossOrigin="" />
-        <link
-          rel="stylesheet"
-          as="style"
-          // @ts-ignore
-          onLoad={(e) => (e.currentTarget.rel = 'stylesheet')}
-          href="https://fonts.googleapis.com/css2?display=swap&family=Inter%3Awght%40400%3B500%3B700%3B900&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
-        />
-        <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
-      </head>
-      <body>
-        {children}
-        <Script src="https://cdn.tailwindcss.com?plugins=forms,container-queries" strategy="beforeInteractive" />
-      </body>
     </html>
   );
 }

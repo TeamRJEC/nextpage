@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Support Ticketing Tool",
-  description: "Demo customer service ticketing interface",
 };
 
 export default function RootLayout({
@@ -14,13 +12,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
-        />
-      </head>
-      <body style={{ fontFamily: 'Inter, \"Noto Sans\", sans-serif' }}>{children}</body>
     </html>
   );
 }
